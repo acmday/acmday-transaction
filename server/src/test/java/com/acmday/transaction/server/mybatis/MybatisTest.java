@@ -1,22 +1,14 @@
-package com.acmday.transaction.server.demo;
+package com.acmday.transaction.server.mybatis;
 
 import com.acmday.transaction.server.BaseClass;
-import com.acmday.transaction.server.bo.User;
-import com.acmday.transaction.server.interfaces.UserMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
-
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
-import java.util.List;
 
 /**
  * @author acmday.
  * @date 2020/6/6.
  */
 @Slf4j
-public class MybatisDemo extends BaseClass {
+public class MybatisTest extends BaseClass {
 //
 //    @Test
 //    public void mapperTest() {

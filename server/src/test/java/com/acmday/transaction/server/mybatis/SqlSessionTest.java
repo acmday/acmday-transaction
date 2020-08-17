@@ -1,4 +1,4 @@
-package com.acmday.transaction.server.demo;
+package com.acmday.transaction.server.mybatis;
 
 import com.acmday.transaction.dao.mapper.StudentMapper;
 import com.acmday.transaction.server.BaseClass;
@@ -21,7 +21,7 @@ import javax.sql.DataSource;
  * @date 2020/6/8.
  */
 @Slf4j
-public class SqlSessionDemo extends BaseClass {
+public class SqlSessionTest extends BaseClass {
 
     @Resource
     private DataSource dataSource;

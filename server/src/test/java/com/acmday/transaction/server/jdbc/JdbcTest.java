@@ -1,4 +1,4 @@
-package com.acmday.transaction.server.demo;
+package com.acmday.transaction.server.jdbc;
 
 import com.acmday.transaction.dao.model.Student;
 import com.acmday.transaction.server.BaseClass;
@@ -19,7 +19,7 @@ import java.util.List;
  * @date 2020/6/6.
  */
 @Slf4j
-public class JdbcDemo extends BaseClass {
+public class JdbcTest extends BaseClass {
 
     private static final String URL = "jdbc:mysql://localhost:3306/acmday?allowMultiQueries=true&charset=utf8mb4&serverTimezone=UTC&characterEncoding=utf-8";
 

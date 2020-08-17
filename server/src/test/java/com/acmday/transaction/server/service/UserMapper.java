@@ -1,4 +1,4 @@
-package com.acmday.transaction.server.interfaces;
+package com.acmday.transaction.server.service;
 
 import com.acmday.transaction.server.bo.User;
 import org.apache.ibatis.annotations.Param;

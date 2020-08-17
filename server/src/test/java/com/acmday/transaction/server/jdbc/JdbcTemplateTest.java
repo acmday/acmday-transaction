@@ -6,7 +6,6 @@ import com.acmday.transaction.server.BaseClass;
 import com.acmday.transaction.server.util.TransactionUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.transaction.TransactionStatus;
 
 import javax.annotation.Resource;

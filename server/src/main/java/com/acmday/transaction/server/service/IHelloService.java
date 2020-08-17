@@ -1,4 +1,4 @@
-package com.acmday.transaction.server.service.interfaces;
+package com.acmday.transaction.server.service;
 
 /**
  * @author acmday.

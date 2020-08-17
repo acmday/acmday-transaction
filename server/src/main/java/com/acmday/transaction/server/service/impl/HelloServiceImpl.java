@@ -1,6 +1,6 @@
-package com.acmday.transaction.server.service;
+package com.acmday.transaction.server.service.impl;
 
-import com.acmday.transaction.server.service.interfaces.IHelloService;
+import com.acmday.transaction.server.service.IHelloService;
 import org.springframework.stereotype.Service;
 
 /**

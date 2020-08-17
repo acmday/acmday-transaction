@@ -15,7 +15,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public class DaoStudentService {
+public class StudentDaoService {
 
     @Resource
     private StudentMapper studentMapper;

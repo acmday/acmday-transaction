@@ -6,7 +6,7 @@
 
 ## 二、DDL
 
-```java
+```sql
 CREATE TABLE `student` (
   `id` int(11) NOT NULL DEFAULT '0',
   `name` varchar(45) NOT NULL DEFAULT '""' COMMENT '姓名',

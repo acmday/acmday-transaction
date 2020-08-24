@@ -20,6 +20,7 @@ import java.beans.PropertyVetoException;
 /**
  * @author acmday.
  * @date 2020/6/4.
+ * 可以用@MapperScan，见Main.java.
  */
 @Configuration
 @Slf4j
@@ -29,25 +30,25 @@ public class AcmDayDataSourceConfig {
     static final String PACKAGE = "com.acmday.transaction.dao.mapper";
     private static final String MAPPER_XML = "classpath*:com/acmday/transaction/dao/mapper/**/*.xml";
 
-    @Value("${spring.datasource.day.username}")
+    @Value("${spring.datasource.username}")
     private String userName;
 
-    @Value("${spring.datasource.day.password}")
+    @Value("${spring.datasource.password}")
     private String passwd;
 
-    @Value("${spring.datasource.day.url}")
+    @Value("${spring.datasource.url}")
     private String url;
 
-    @Value("${spring.datasource.day.driver-class-name}")
+    @Value("${spring.datasource.driver-class-name}")
     private String driverClassName;
 
-    @Value("${spring.datasource.day.maxPoolSize}")
+    @Value("${spring.datasource.maxPoolSize}")
     private Integer maxPoolSize;
 
-    @Value("${spring.datasource.day.initialPoolSize}")
+    @Value("${spring.datasource.initialPoolSize}")
     private Integer initialPoolSize;
 
-    @Value("${spring.datasource.day.minPoolSize}")
+    @Value("${spring.datasource.minPoolSize}")
     private Integer minPoolSize;
 
     @Bean(name = "configDayDataSource")
@@ -86,11 +87,6 @@ public class AcmDayDataSourceConfig {
         return sessionFactory.getObject();
     }
 
-    /**
-     * 事物管理器.
-     * @return
-     * @throws PropertyVetoException
-     */
     @Bean(name = "transactionManager")
     @Primary
     public DataSourceTransactionManager masterTransactionManager() throws PropertyVetoException {

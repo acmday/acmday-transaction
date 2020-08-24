@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 /**
- * @author wushaofeng.
+ * @author acmday.
  * @date 2020/8/17.
  * 不依赖数据库的测试.
  */

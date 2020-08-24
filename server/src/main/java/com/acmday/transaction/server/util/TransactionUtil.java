@@ -1,12 +1,16 @@
 package com.acmday.transaction.server.util;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import javax.annotation.Resource;
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author acmday.
@@ -20,7 +24,8 @@ public class TransactionUtil {
     private DataSourceTransactionManager transactionManager;
 
     public TransactionStatus begin() {
-        return transactionManager.getTransaction(new DefaultTransactionDefinition());
+        DefaultTransactionDefinition definition = new DefaultTransactionDefinition();
+        return transactionManager.getTransaction(definition);
     }
 
     public void commit(TransactionStatus transactionStatus) {

@@ -4,7 +4,7 @@ import com.acmday.transaction.server.service.PeopleService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author wushaofeng.
+ * @author acmday.
  * @date 2020/8/17.
  */
 @Slf4j

@@ -1,7 +1,7 @@
 package com.acmday.transaction.server.service;
 
 /**
- * @author wushaofeng.
+ * @author acmday.
  * @date 2020/8/17.
  */
 public interface PeopleService {

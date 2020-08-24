@@ -1,13 +1,11 @@
-
 spring:
   datasource:
-    day:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/acmday?allowMultiQueries=true&charset=utf8mb4&serverTimezone=UTC&characterEncoding=utf-8
-      username: acmday
-      password: acmday
-      maxPoolSize: 5
-      minPoolSize: 5
-      initialPoolSize: 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/acmday?allowMultiQueries=true&charset=utf8mb4&serverTimezone=UTC&characterEncoding=utf-8
+    username: acmday
+    password: acmday
+    maxPoolSize: 5
+    minPoolSize: 5
+    initialPoolSize: 1
   redis:
     host: localhost
